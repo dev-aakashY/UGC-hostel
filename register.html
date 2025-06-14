@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <main>
+      <div class="navbar">
+        <div>
+          <img
+            class="img"
+            src="clglogo2.png"
+            alt="logo"
+          />
+        </div>
+        <div class="main_anchor">
+          <a href="index.html" class="nav_button">Home</a>
+          <a href="Facilities.html" class="nav_button">Facilities</a>
+          <a href="review.html" class="nav_button">Review</a>
+          <a href="contact.html" class="nav_button">Contact</a>
+          <a href="about.html" class="nav_button">About</a>
+        </div>
+      </div>
+      <section>
+        <div class="form">
+          <div class="area">
+            <label class="form_label">Full name</label>
+            <input type="text" placeholder="Enter Full Name" />
+
+            <label class="form_label">Username</label>
+            <input type="text" placeholder="Enter Username" />
+          </div>
+
+          <br />
+          <div class="area">
+            <label class="form_label">Email</label>
+            <input type="email" placeholder="Enter Email" />
+
+            <label class="form_label">Phone </label>
+            <input type="tel" placeholder="Enter Phone Number" />
+          </div>
+          <br />
+          <div class="area">
+            <label class="form_label">Password</label>
+            <input type="password" placeholder="Enter Password" />
+
+            <label class="form_label">Password</label>
+            <input type="password" placeholder="Enter Confirm Password" />
+          </div>
+          <div class="area"><label class="form_label">Gender</label></div>
+
+          <div class="radio">
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+            <input type="radio" name="gender" />Other
+          </div>
+          <div id="button_ofnext">
+            <a class="sub_anch" href="reg_done.html">
+              <button type="button">Submit</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <span>
+          <p id="foot_text">
+            © 2025 [UGC BOYS HOSTEL]. All rights reserved.
+          </p>
+        </span>
+      </footer>
+    </main>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Registered successfully");
+            window.location.href = "reg_done.html";
+        }
+    </script>
+  </body>
+</html>
